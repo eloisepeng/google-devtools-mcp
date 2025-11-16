@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome DevTools MCP - Server Integration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">DEVFEST.WORKSHOP</a>
+            <button class="hamburger" id="hamburger">☰</button>
+            <ul id="nav-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="gdg-devfest.html">GDG & DEVFEST</a></li>
+                <li><a href="devtools-mcp.html" class="active">DEVTOOLS MCP</a></li>
+                <li><a href="about-ponyo.html">ABOUT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>CHROME DEVTOOLS<br>MCP SERVER</h1>
+                <div class="subtitle">AI-Powered Browser Automation</div>
+                <p class="description">
+                    A Model Context Protocol server that enables AI assistants to control and inspect 
+                    web browsers through the Chrome DevTools Protocol.
+                </p>
+            </div>
+        </section>
+
+        <!-- What is DevTools MCP -->
+        <section class="content-section">
+            <div class="container">
+                <div class="content-grid">
+                    <div class="content-text">
+                        <h2>WHAT IS DEVTOOLS MCP?</h2>
+                        <p>
+                            Chrome DevTools MCP Server is a bridge between AI assistants and web browsers. 
+                            It implements the Model Context Protocol to provide a standardized interface for 
+                            controlling Chrome through the Chrome DevTools Protocol (CDP).
+                        </p>
+                        <p>
+                            This enables AI models to:
+                        </p>
+                        <p>
+                            <span class="content-highlight">▸ Inspect and manipulate web pages</span><br>
+                            ▸ Automate browser interactions<br>
+                            ▸ Gather performance metrics<br>
+                            ▸ Debug web applications<br>
+                            ▸ Execute JavaScript in browser context
+                        </p>
+                    </div>
+                    <div class="content-text">
+                        <h2>WHY IT MATTERS</h2>
+                        <p>
+                            The intersection of AI and web development tools is revolutionizing how we 
+                            build and maintain web applications. With DevTools MCP, developers can:
+                        </p>
+                        <p>
+                            ✦ Automate complex testing scenarios<br>
+                            ✦ Debug issues with AI assistance<br>
+                            ✦ Generate test reports automatically<br>
+                            ✦ Optimize performance with recommendations<br>
+                            ✦ Build intelligent browser automation workflows
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Architecture -->
+        <section class="grid-section">
+            <div class="container">
+                <h2 class="section-title">ARCHITECTURE OVERVIEW</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>🎯 MODEL CONTEXT PROTOCOL</h3>
+                        <p>
+                            MCP provides a standardized protocol for connecting AI models with tools and data sources. 
+                            It enables seamless integration between LLMs and external systems.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>🌐 CHROME DEVTOOLS PROTOCOL</h3>
+                        <p>
+                            CDP allows programmatic control of Chrome/Chromium browsers. It provides access to 
+                            DOM inspection, JavaScript execution, network monitoring, and more.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>⚙️ MCP SERVER</h3>
+                        <p>
+                            The DevTools MCP Server bridges MCP and CDP, exposing browser capabilities as MCP tools. 
+                            It handles protocol translation and resource management.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Features -->
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-title">KEY FEATURES</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>🔍 DOM INSPECTION</h3>
+                        <p>
+                            Query and manipulate the DOM tree. Access element properties, 
+                            styles, and attributes. Modify page structure in real-time.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>📊 PERFORMANCE METRICS</h3>
+                        <p>
+                            Gather detailed performance data including load times, memory usage, 
+                            and runtime metrics. Identify bottlenecks and optimization opportunities.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>🖱️ USER INTERACTION</h3>
+                        <p>
+                            Simulate user interactions like clicks, typing, and scrolling. 
+                            Navigate pages and fill forms programmatically.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>🔐 NETWORK INSPECTION</h3>
+                        <p>
+                            Monitor network requests and responses. Capture API calls, 
+                            headers, and payloads for debugging and testing.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>🐛 ERROR TRACKING</h3>
+                        <p>
+                            Capture and log errors, warnings, and console messages. 
+                            Get detailed stack traces and debugging information.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>⚡ JAVASCRIPT EXECUTION</h3>
+                        <p>
+                            Execute arbitrary JavaScript in the browser context. 
+                            Access page state and variables directly.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use Cases -->
+        <section class="content-section">
+            <div class="container">
+                <div class="content-grid">
+                    <div class="content-text">
+                        <h2>USE CASES</h2>
+                        <p>
+                            <span class="content-highlight">🧪 Automated Testing</span><br>
+                            Run comprehensive browser tests powered by AI recommendations
+                        </p>
+                        <p>
+                            <span class="content-highlight">🐛 Debugging & Diagnostics</span><br>
+                            Get AI-powered insights into web application issues
+                        </p>
+                        <p>
+                            <span class="content-highlight">📈 Performance Optimization</span><br>
+                            Identify and fix performance bottlenecks
+                        </p>
+                        <p>
+                            <span class="content-highlight">🤖 Intelligent Automation</span><br>
+                            Build context-aware browser automation workflows
+                        </p>
+                    </div>
+                    <div class="content-text">
+                        <h2>GETTING STARTED</h2>
+                        <p>
+                            To use Chrome DevTools MCP Server:
+                        </p>
+                        <p>
+                            1. <strong>Install the MCP Server</strong><br>
+                            Set up the DevTools MCP server on your system
+                        </p>
+                        <p>
+                            2. <strong>Configure Your Client</strong><br>
+                            Point your AI assistant to the MCP server
+                        </p>
+                        <p>
+                            3. <strong>Start Using Tools</strong><br>
+                            Use browser inspection and automation in your AI interactions
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources -->
+        <section class="grid-section">
+            <div class="container">
+                <h2 class="section-title">RESOURCES & LINKS</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>📖 DOCUMENTATION</h3>
+                        <p>
+                            <a href="https://github.com/ChromeDevTools/chrome-devtools-mcp" target="_blank" rel="noopener noreferrer">
+                                GitHub Repository
+                            </a>
+                        </p>
+                        <p>
+                            Comprehensive documentation and API reference
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>🔗 MCP SPECIFICATION</h3>
+                        <p>
+                            <a href="https://modelcontextprotocol.io" target="_blank" rel="noopener noreferrer">
+                                Model Context Protocol
+                            </a>
+                        </p>
+                        <p>
+                            Learn about the MCP standard and protocol details
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>🛠️ CHROME DEVTOOLS</h3>
+                        <p>
+                            <a href="https://developer.chrome.com/docs/devtools" target="_blank" rel="noopener noreferrer">
+                                Chrome DevTools Docs
+                            </a>
+                        </p>
+                        <p>
+                            Official Chrome DevTools documentation
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="content-section">
+            <div class="container" style="text-align: center;">
+                <h2 class="section-title">EXPLORE THE POSSIBILITIES</h2>
+                <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Chrome DevTools MCP Server opens up new possibilities for AI-assisted web development. 
+                    Join the revolution and build the future of intelligent browser automation.
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://github.com/ChromeDevTools/chrome-devtools-mcp" class="btn" target="_blank" rel="noopener noreferrer">VIEW ON GITHUB</a>
+                    <a href="index.html" class="btn btn-secondary">BACK TO WORKSHOP</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Chrome DevTools MCP Server | AI-Powered Browser Automation</p>
+        <p>Part of the Model Context Protocol ecosystem</p>
+        <p style="margin-top: 1rem;">
+            <a href="https://github.com/ChromeDevTools/chrome-devtools-mcp" target="_blank" rel="noopener noreferrer">GitHub</a> | 
+            <a href="https://modelcontextprotocol.io" target="_blank" rel="noopener noreferrer">MCP</a> | 
+            <a href="https://developer.chrome.com" target="_blank" rel="noopener noreferrer">Chrome Developers</a>
+        </p>
+    </footer>
+
+    <script>
+        // Hamburger Menu
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('mobile-open');
+                hamburger.textContent = navMenu.classList.contains('mobile-open') ? '✕' : '☰';
+            });
+
+            // Close menu when clicking on a link
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('mobile-open');
+                    if (hamburger) hamburger.textContent = '☰';
+                });
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+                    navMenu.classList.remove('mobile-open');
+                    if (hamburger) hamburger.textContent = '☰';
+                }
+            });
+        }
+
+        // Active navigation highlight
+        document.addEventListener('DOMContentLoaded', () => {
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            document.querySelectorAll('nav a').forEach(link => {
+                const href = link.getAttribute('href');
+                if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
